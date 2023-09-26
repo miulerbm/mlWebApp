@@ -55,7 +55,7 @@ def load_data():
 df = load_data()
 
 def show_explore_page():
-    st.title("Explore Software Engineer Salaries")
+    st.title("Explore Data de otros Desarrolladores")
 
     st.write(
         """
@@ -73,12 +73,12 @@ def show_explore_page():
     legend_labels = data.index
     plt.legend(legend_labels, title="Countries", loc="center left", bbox_to_anchor=(1, 0.5))
 
-    st.write("""### Number of Data from Different Countries""")
+    st.write("""### Cantidad de Datos de Diversos Países""")
     st.pyplot(fig1)
 
     st.write(
         """
-    #### Mean Salary Based on Country
+    #### Salario promedio por País
         """
     )
 
@@ -90,7 +90,7 @@ def show_explore_page():
 
     st.write(
         """
-        #### Mean Salary Based On Experience
+        #### Salario Medio por Años de Experiencia
         """
     )
 

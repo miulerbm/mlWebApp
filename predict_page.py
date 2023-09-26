@@ -17,9 +17,9 @@ le_country = data["le_country"]
 le_education = data["le_education"]
 
 def show_predict_page():
-    st.title("Software Developer Salary Prediction")
+    st.title("Herramienta de Predicción de Salario (Software Development)")
 
-    st.write("""### We need some information to predict the salary""")
+    st.write("""### Introduzca sus datos""")
 
     countries = (
         "United States of America",
@@ -53,15 +53,15 @@ def show_predict_page():
     # Las tuplas definidas arriba se empleand como las opciones del
     # selectbox. Tanto para country como para education
     # El valor seleccionado en la interfaz será cargado a la variable definida:
-    country = st.selectbox("Country", countries)
-    education = st.selectbox("Education Level", education)
+    country = st.selectbox("País", countries)
+    education = st.selectbox("Educación", education)
 
     # Ahora, para los años de experiencia:
-    experience = st.slider("Years of Experience", 0, 50, 3)
+    experience = st.slider("Años de Experiencia", 0, 50, 3)
     # Límite inferior, lím superior y valor default
 
     # Ahora, para el botón de Calcular Salario:
-    ok = st.button("Calculate Salary")
+    ok = st.button("Predecir mi salario")
 
     # Si es que damos click a "ok", será true:
     if ok:
@@ -71,4 +71,4 @@ def show_predict_page():
         X = X.astype(float)
 
         salary = regressor.predict(X)
-        st.subheader(f"The estimated salary is ${salary[0]:,.02f}")
+        st.subheader(f"El salario será aproximadamente: ${salary[0]:,.02f}")
