@@ -19,6 +19,6 @@ El desarrollo del proyecto se lleva a cabo en las siguientes etapas:
 
 ## Resultados
 
-En esta sección, podrían incluirse imágenes referenciales que muestren la interfaz web y ejemplos de cómo los usuarios pueden interactuar con la aplicación. Estas imágenes ayudarán a los usuarios a comprender mejor el funcionamiento y la utilidad de la aplicación.
+![Imagen de Exploracion](/screenshoots/pic_exploration.png)
 
-¡Este proyecto es un emocionante ejemplo de cómo la ciencia de datos y la programación se pueden combinar para crear herramientas útiles y atractivas para la toma de decisiones!
+![Imagen de Prediccion](/screenshoots/pic_prediction.png)
